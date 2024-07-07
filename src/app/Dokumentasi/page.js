@@ -12,8 +12,8 @@ const Page = () => {
       {/*<h1 className="text-[64px] font-bold text-red-100">Dokumentasi</h1>*/}
       {/* ... rest of your code ... */}
       <div className="mt-6 mx-auto w-full px-10">
-        {listDokumentasi.map((item) => (
-          <DokumentasiItem props={item} />
+        {listDokumentasi.map((index, item) => (
+          <DokumentasiItem key={index} props={item} />
         ))}
       </div>
     </div>
